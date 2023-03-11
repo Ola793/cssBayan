@@ -1,0 +1,67 @@
+body, html {
+    background-color: #f6f6ec;
+    font-family: Gotham Pro, sans-serif;
+    font-size: 16px;
+    font-weight: Bold;
+}
+
+.wrapper {
+    margin: 10rem;
+}
+
+.bayan__body {
+    color: #6477EB;
+}
+
+.bayan__body:hover {
+    color: black;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+.bayan__row {
+    border-top: 1px solid lightgray;
+}
+
+.bayan__row label {
+    font-size: 1.25rem;
+    display: inline-block;
+    width: 95%;
+    cursor: pointer;
+}
+
+.bayan__row input {
+    appearance: none;
+    display: inline-block;
+}
+
+.bayan__row img {
+    display: none;
+    width: 40%;
+    margin: 1rem auto 2rem auto;
+}
+
+.bayan__row input:checked ~ img {
+    display: block;
+    transition: ease-in-out 1s;
+}
+
+.bayan__row input:checked ~ label{
+    color: black;
+}
+
+.bayan__row .plus {
+    display: inline-block;
+    font-size: 2.5rem;
+    visibility: hidden;
+}
+
+.bayan__body:hover .plus {
+    transition: linear 0.1s;
+    visibility: visible;
+}
+
+.bayan__row input:checked ~ .plus {
+    transition: ease-in-out 0.1s;
+    transform: rotate(45deg);
+}
