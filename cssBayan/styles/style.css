@@ -23,15 +23,15 @@ body, html {
     border-top: 1px solid lightgray;
 }
 
-.bayan__row:active {
-    color: #6477EB;
-}
-
 .bayan__row label {
     font-size: 1.25rem;
     display: inline-block;
     width: 90%;
     cursor: pointer;
+}
+
+.bayan__row label:active {
+    color: black;
 }
 
 .bayan__row input {
@@ -75,4 +75,8 @@ body, html {
 .bayan__row input:checked ~ .plus {
     transition: ease-in-out 0.1s;
     transform: rotate(45deg);
+}
+
+.bayan__row:active input:checked ~ .plus {
+    color: #6477EB;
 }
