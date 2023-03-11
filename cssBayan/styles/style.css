@@ -26,13 +26,17 @@ body, html {
 .bayan__row label {
     font-size: 1.25rem;
     display: inline-block;
-    width: 95%;
+    width: 90%;
     cursor: pointer;
 }
 
 .bayan__row input {
     appearance: none;
     display: inline-block;
+}
+
+.bayan__row:active {
+    color: #6477EB;
 }
 
 .bayan__row img {
@@ -48,6 +52,10 @@ body, html {
 
 .bayan__row input:checked ~ label{
     color: black;
+}
+
+.bayan__row:active input:checked ~ label{
+    color: #6477EB;
 }
 
 .bayan__row .plus {
