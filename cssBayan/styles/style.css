@@ -23,6 +23,10 @@ body, html {
     border-top: 1px solid lightgray;
 }
 
+.bayan__row:active {
+    color: #6477EB;
+}
+
 .bayan__row label {
     font-size: 1.25rem;
     display: inline-block;
@@ -35,26 +39,25 @@ body, html {
     display: inline-block;
 }
 
-.bayan__row:active {
-    color: #6477EB;
-}
-
 .bayan__row img {
-    display: none;
-    width: 40%;
-    margin: 1rem auto 2rem auto;
+    display: block;
+    appearance: none;
+    width: 0%;
+    margin: 0.5rem auto;
 }
 
 .bayan__row input:checked ~ img {
-    display: block;
-    transition: ease-in-out 1s;
+    appearance: auto;
+    width: 40%;
+    transition: ease-in 0.25s;
+    margin-bottom: 1.5rem;
 }
 
-.bayan__row input:checked ~ label{
+.bayan__row input:checked ~ label {
     color: black;
 }
 
-.bayan__row:active input:checked ~ label{
+.bayan__row:active input:checked ~ label {
     color: #6477EB;
 }
 
