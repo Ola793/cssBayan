@@ -1,12 +1,16 @@
 body, html {
     background-color: #f6f6ec;
     font-family: Gotham Pro, sans-serif;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: Bold;
 }
 
 .wrapper {
-    margin: 10rem;
+    margin: 5rem;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
 }
 
 .bayan__body {
@@ -79,4 +83,22 @@ body, html {
 
 .bayan__row:active input:checked ~ .plus {
     color: #6477EB;
+}
+
+@media (min-width: 320px) and (max-width: 819px) {
+    body, html {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1919px) {
+    body, html {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    body, html {
+        font-size: 2rem;
+    }
 }
