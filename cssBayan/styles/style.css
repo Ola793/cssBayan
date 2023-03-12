@@ -67,11 +67,11 @@ body, html {
     color: black;
 }
 
-/* .bayan__body:hover .plus {
+.bayan__body:hover .plus {
     visibility: visible;
 }
 
-.bayan__row:hover .plus,  */
+/* .bayan__row:hover .plus,  */
 .bayan__row input:checked ~ .plus {
     transform: rotate(45deg);
 }
