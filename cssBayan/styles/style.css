@@ -67,11 +67,12 @@ body, html {
     color: black;
 }
 
-.bayan__body:hover .plus {
+/* .bayan__body:hover .plus {
     visibility: visible;
 }
 
-.bayan__row:hover .plus, .bayan__row input:checked ~ .plus {
+.bayan__row:hover .plus,  */
+.bayan__row input:checked ~ .plus {
     transform: rotate(45deg);
 }
 
@@ -105,6 +106,27 @@ body, html {
     .bayan__row label {
         width: 93%;
     }
+
+    .bayan__body:hover {
+        color: black;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+    }
+
+    .bayan__row:hover img, .bayan__row input:checked ~ img {
+        appearance: auto;
+        width: 25%;
+        transition: ease-in 0.5s;
+        margin-bottom: 1.5rem;
+    }
+
+    .bayan__body:hover .plus {
+        visibility: visible;
+    }
+    
+    .bayan__row:hover .plus, .bayan__row input:checked ~ .plus {
+        transform: rotate(45deg);
+    }
 }
 
 @media (min-width: 1920px) {
@@ -126,10 +148,18 @@ body, html {
         transition: ease-out 0.5s;
     }
 
-    .bayan__row:hover img {
+    .bayan__row:hover img, .bayan__row input:checked ~ img {
         appearance: auto;
         width: 25%;
         transition: ease-in 0.5s;
         margin-bottom: 1.5rem;
+    }
+
+    .bayan__body:hover .plus {
+        visibility: visible;
+    }
+    
+    .bayan__row:hover .plus, .bayan__row input:checked ~ .plus {
+        transform: rotate(45deg);
     }
 }
