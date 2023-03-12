@@ -17,12 +17,6 @@ body, html {
     color: #6477EB;
 }
 
-.bayan__body:hover {
-    color: black;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-}
-
 .bayan__row {
     border-top: 1px solid lightgray;
 }
@@ -31,7 +25,7 @@ body, html {
     font-size: 1.25rem;
     line-height: 2.5rem;
     display: inline-block;
-    width: 97%;
+    width: 80%;
     cursor: pointer;
 }
 
@@ -51,7 +45,7 @@ body, html {
     margin: 0.5rem auto;
 }
 
-.bayan__row:hover img, .bayan__row input:checked ~ img {
+.bayan__row input:checked ~ img {
     appearance: auto;
     width: 25%;
     transition: ease-in 0.5s;
@@ -87,18 +81,55 @@ body, html {
 
 @media (min-width: 320px) and (max-width: 819px) {
     body, html {
-        font-size: 0.5rem;
+        font-size: 8px;
+    }
+
+    .wrapper {
+        margin: 2.5rem 6rem;
+    }
+
+    .bayan__row label {
+        width: 90%;
     }
 }
 
 @media (min-width: 820px) and (max-width: 1919px) {
     body, html {
-        font-size: 1rem;
+        font-size: 16px;
+    }
+
+    .wrapper {
+        margin: 3.5rem 8rem;
+    }
+
+    .bayan__row label {
+        width: 93%;
     }
 }
 
 @media (min-width: 1920px) {
     body, html {
-        font-size: 2rem;
+        font-size: 32px;
+    }
+
+    .wrapper {
+        margin: 4.5rem 10rem;
+    }
+
+    .bayan__row label {
+        width: 94%;
+    }
+
+    .bayan__body:hover {
+        color: black;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+    }
+
+    .bayan__row:hover img {
+        appearance: auto;
+        width: 25%;
+        transition: ease-in 0.5s;
+        margin-bottom: 1.5rem;
     }
 }
