@@ -50,10 +50,10 @@ body, html {
     margin: 0.5rem auto;
 }
 
-.bayan__row input:checked ~ img {
+.bayan__row:hover img, .bayan__row input:checked ~ img {
     appearance: auto;
     width: 40%;
-    transition: ease-in 0.25s;
+    transition: ease-in 0.5s;
     margin-bottom: 1.5rem;
 }
 
@@ -76,7 +76,7 @@ body, html {
     visibility: visible;
 }
 
-.bayan__row input:checked ~ .plus {
+.bayan__row:hover .plus, .bayan__row input:checked ~ .plus {
     transition: ease-in-out 0.1s;
     transform: rotate(45deg);
 }
