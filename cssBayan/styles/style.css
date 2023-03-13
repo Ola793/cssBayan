@@ -24,7 +24,6 @@ body, html {
 .bayan__row label {
     display: block;
     font-size: 1.25rem;
-    line-height: 2.5rem;
     cursor: pointer;
 }
 
