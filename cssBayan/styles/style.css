@@ -72,10 +72,11 @@ body, html {
 
 .bayan__body:hover .plus {
     visibility: visible;
+    transform: translateY(-50%);
 }
 
 .bayan__row input:checked ~ .text__wrapper .plus {
-    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .bayan__row:active input:checked ~ .text__wrapper .plus {
@@ -113,13 +114,9 @@ body, html {
         transition: ease-in 0.5s;
         margin-bottom: 1.5rem;
     }
-
-    .bayan__body:hover .plus {
-        visibility: visible;
-    }
     
-    .bayan__row:hover .plus, .bayan__row input:checked ~ .plus {
-        transform: rotate(45deg);
+    .bayan__row:hover .plus, .bayan__row input:checked ~ .text__wrapper .plus {
+        transform: translateY(-50%) rotate(45deg);
     }
 }
 
@@ -145,11 +142,7 @@ body, html {
         margin-bottom: 1.5rem;
     }
 
-    .bayan__body:hover .plus {
-        visibility: visible;
-    }
-    
-    .bayan__row:hover .plus, .bayan__row input:checked ~ .plus {
-        transform: rotate(45deg);
+    .bayan__row:hover .plus, .bayan__row input:checked ~ .text__wrapper .plus {
+        transform: translateY(-50%) rotate(45deg);
     }
 }
