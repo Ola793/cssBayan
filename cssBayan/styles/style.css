@@ -22,10 +22,9 @@ body, html {
 }
 
 .bayan__row label {
+    display: block;
     font-size: 1.25rem;
     line-height: 2.5rem;
-    display: inline-block;
-    width: 80%;
     cursor: pointer;
 }
 
@@ -36,6 +35,11 @@ body, html {
 .bayan__row input {
     appearance: none;
     display: inline-block;
+}
+
+.bayan__row .text__wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .bayan__row img {
@@ -52,11 +56,11 @@ body, html {
     margin-bottom: 1.5rem;
 }
 
-.bayan__row input:checked ~ label {
+.bayan__row input:checked ~ .text__wrapper span {
     color: black;
 }
 
-.bayan__row:active input:checked ~ label {
+.bayan__row:active input:checked ~ .text__wrapper span {
     color: #6477EB;
 }
 
@@ -71,12 +75,11 @@ body, html {
     visibility: visible;
 }
 
-/* .bayan__row:hover .plus,  */
-.bayan__row input:checked ~ .plus {
+.bayan__row input:checked ~ .text__wrapper .plus {
     transform: rotate(45deg);
 }
 
-.bayan__row:active input:checked ~ .plus {
+.bayan__row:active input:checked ~ .text__wrapper .plus {
     color: #6477EB;
 }
 
@@ -88,10 +91,6 @@ body, html {
     .wrapper {
         margin: 2.5rem 6rem;
     }
-
-    .bayan__row label {
-        width: 90%;
-    }
 }
 
 @media (min-width: 820px) and (max-width: 1919px) {
@@ -101,10 +100,6 @@ body, html {
 
     .wrapper {
         margin: 3.5rem 8rem;
-    }
-
-    .bayan__row label {
-        width: 93%;
     }
 
     .bayan__body:hover {
@@ -136,10 +131,6 @@ body, html {
 
     .wrapper {
         margin: 4.5rem 10rem;
-    }
-
-    .bayan__row label {
-        width: 94%;
     }
 
     .bayan__body:hover {
