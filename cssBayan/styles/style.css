@@ -6,7 +6,7 @@ body, html {
 }
 
 .wrapper {
-    margin: 2.5rem 6rem;
+    margin: 2.5rem 5rem;
 }
 
 .wrapper h1 {
@@ -20,6 +20,7 @@ body, html {
 
 .bayan__row {
     border-top: 1px solid lightgray;
+    margin-bottom: 3rem;
 }
 
 .bayan__row label {
@@ -46,14 +47,8 @@ body, html {
     display: block;
     appearance: none;
     width: 0%;
-    margin: 0.5rem auto;
+    margin: auto;
     transition: width 1s ease-in-out;
-}
-
-.bayan__row input:checked ~ img {
-    appearance: auto;
-    width: 25%;
-    margin-bottom: 1.5rem;
 }
 
 .bayan__row input:checked ~ .text__wrapper span {
@@ -66,7 +61,7 @@ body, html {
 
 .bayan__row .plus {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 5rem;
     visibility: hidden;
     color: black;
 }
@@ -99,7 +94,7 @@ body, html {
 
 @media (min-width: 320px) and (max-width: 819px) {
     .wrapper {
-        margin: 2.5rem 6rem;
+        margin: 2.5rem 10rem;
     }
 
     .wrapper h1 {
@@ -113,7 +108,7 @@ body, html {
 
 @media (min-width: 820px) and (max-width: 1919px) {
     .wrapper {
-        margin: 3.5rem 8rem;
+        margin: 3.5rem 20rem;
     }
 
     .wrapper h1 {
@@ -121,13 +116,13 @@ body, html {
     }
 
     .bayan__row label {
-        font-size: 1.75rem;
+        font-size: 3rem;
     }
 }
 
 @media (min-width: 1920px) {
     .wrapper {
-        margin: 4.5rem 10rem;
+        margin: 4.5rem 40rem;
     }
 
     .wrapper h1 {
@@ -135,6 +130,6 @@ body, html {
     }
 
     .bayan__row label {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 }
