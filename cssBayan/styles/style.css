@@ -1,0 +1,139 @@
+body, html {
+    background-color: #f6f6ec;
+    font-family: Gotham Pro, sans-serif;
+    font-size: 0.5rem;
+    font-weight: Bold;
+}
+
+.wrapper {
+    margin: 2.5rem 5rem;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
+}
+
+.bayan__body {
+    color: #6477EB;
+    transition: width 2s ease-in-out 0.5s;
+}
+
+.bayan__row {
+    border-top: 1px solid lightgray;
+    margin-bottom: 3rem;
+}
+
+.bayan__row label {
+    display: block;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.bayan__row label:active {
+    color: black;
+}
+
+.bayan__row input {
+    appearance: none;
+    display: inline-block;
+}
+
+.bayan__row .text__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bayan__row img {
+    display: block;
+    appearance: none;
+    width: 0%;
+    margin: auto;
+    transition: width 1s ease-in-out;
+}
+
+.bayan__row input:checked ~ img {
+    width: 25%;
+}
+
+.bayan__row input:checked ~ .text__wrapper span {
+    color: black;
+}
+
+.bayan__row:active input:checked ~ .text__wrapper span {
+    color: #6477EB;
+}
+
+.bayan__row .plus {
+    display: inline-block;
+    font-size: 5rem;
+    visibility: hidden;
+    color: black;
+}
+
+.bayan__row:active input:checked ~ .text__wrapper .plus {
+    color: #6477EB;
+}
+
+@media (hover:hover) {
+    .bayan__body:hover .plus {
+        visibility: visible;
+        transform: translateY(-50%);
+    }
+
+    .bayan__body:hover {
+        color: black;
+        cursor: pointer;
+   }
+
+    .bayan__row:hover img, .bayan__row input:checked ~ img {
+        appearance: auto;
+        width: 25%;
+        margin-bottom: 1.5rem;
+    }
+
+    .bayan__row:hover .plus, .bayan__row input:checked ~ .text__wrapper .plus {
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 819px) {
+    .wrapper {
+        margin: 2.5rem 10rem;
+    }
+
+    .wrapper h1 {
+        font-size: 2rem;
+    }
+    
+    .bayan__row label {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1919px) {
+    .wrapper {
+        margin: 3.5rem 20rem;
+    }
+
+    .wrapper h1 {
+        font-size: 4rem;
+    }
+
+    .bayan__row label {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        margin: 4.5rem 40rem;
+    }
+
+    .wrapper h1 {
+        font-size: 8rem;
+    }
+
+    .bayan__row label {
+        font-size: 4rem;
+    }
+}
