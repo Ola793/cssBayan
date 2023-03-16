@@ -1,7 +1,7 @@
 body, html {
     background-color: #f6f6ec;
     font-family: Gotham Pro, sans-serif;
-    font-size: 8px;
+    font-size: 0.5rem;
     font-weight: Bold;
 }
 
@@ -15,6 +15,7 @@ body, html {
 
 .bayan__body {
     color: #6477EB;
+    transition: width 2s ease-in-out 0.5s;
 }
 
 .bayan__row {
@@ -46,12 +47,12 @@ body, html {
     appearance: none;
     width: 0%;
     margin: 0.5rem auto;
+    transition: width 1s ease-in-out;
 }
 
 .bayan__row input:checked ~ img {
     appearance: auto;
     width: 25%;
-    transition: ease-in 0.5s;
     margin-bottom: 1.5rem;
 }
 
@@ -70,79 +71,70 @@ body, html {
     color: black;
 }
 
-.bayan__body:hover .plus {
-    visibility: visible;
-    transform: translateY(-50%);
-}
-
-.bayan__row input:checked ~ .text__wrapper .plus {
-    transform: translateY(-50%) rotate(45deg);
-}
-
 .bayan__row:active input:checked ~ .text__wrapper .plus {
     color: #6477EB;
 }
 
-@media (min-width: 320px) and (max-width: 819px) {
-    body, html {
-        font-size: 8px;
+@media (hover:hover) {
+    .bayan__body:hover .plus {
+        visibility: visible;
+        transform: translateY(-50%);
     }
 
+    .bayan__body:hover {
+        color: black;
+        cursor: pointer;
+   }
+
+    .bayan__row:hover img, .bayan__row input:checked ~ img {
+        appearance: auto;
+        width: 25%;
+        margin-bottom: 1.5rem;
+    }
+
+    .bayan__row:hover .plus, .bayan__row input:checked ~ .text__wrapper .plus {
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 819px) {
     .wrapper {
         margin: 2.5rem 6rem;
+    }
+
+    .wrapper h1 {
+        font-size: 2rem;
+    }
+    
+    .bayan__row label {
+        font-size: 1.5rem;
     }
 }
 
 @media (min-width: 820px) and (max-width: 1919px) {
-    body, html {
-        font-size: 16px;
-    }
-
     .wrapper {
         margin: 3.5rem 8rem;
     }
 
-    .bayan__body:hover {
-        color: black;
-        cursor: pointer;
-        transition: ease-out 0.5s;
+    .wrapper h1 {
+        font-size: 4rem;
     }
 
-    .bayan__row:hover img, .bayan__row input:checked ~ img {
-        appearance: auto;
-        width: 25%;
-        transition: ease-in 0.5s;
-        margin-bottom: 1.5rem;
-    }
-    
-    .bayan__row:hover .plus, .bayan__row input:checked ~ .text__wrapper .plus {
-        transform: translateY(-50%) rotate(45deg);
+    .bayan__row label {
+        font-size: 1.75rem;
     }
 }
 
 @media (min-width: 1920px) {
-    body, html {
-        font-size: 32px;
-    }
-
     .wrapper {
         margin: 4.5rem 10rem;
     }
 
-    .bayan__body:hover {
-        color: black;
-        cursor: pointer;
-        transition: ease-out 0.5s;
+    .wrapper h1 {
+        font-size: 8rem;
     }
 
-    .bayan__row:hover img, .bayan__row input:checked ~ img {
-        appearance: auto;
-        width: 25%;
-        transition: ease-in 0.5s;
-        margin-bottom: 1.5rem;
-    }
-
-    .bayan__row:hover .plus, .bayan__row input:checked ~ .text__wrapper .plus {
-        transform: translateY(-50%) rotate(45deg);
+    .bayan__row label {
+        font-size: 2rem;
     }
 }
