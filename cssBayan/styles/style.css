@@ -51,6 +51,10 @@ body, html {
     transition: width 1s ease-in-out;
 }
 
+.bayan__row input:checked ~ img {
+    width: 25%;
+}
+
 .bayan__row input:checked ~ .text__wrapper span {
     color: black;
 }
